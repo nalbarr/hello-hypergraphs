@@ -1,0 +1,19 @@
+[project]
+name = "hello-hypergraphs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dhg>=0.9.5",
+    "fastjsonschema>=2.21.2",
+    "hypernetx>=2.4.0",
+    "ipykernel>=7.1.0",
+    "numpy>=1.26.4",
+    "torch>=1.13.1",
+    "torch-geometric>=2.7.0",
+    "torch-scatter>=2.1.2",
+]
+
+[tool.uv.extra-build-dependencies]
+torch-scatter = ["torch"]
